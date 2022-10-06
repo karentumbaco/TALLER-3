@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="TALLER 3.css" />
+    <title>Taller 3</title>
+
+
+</head>
+<body>
+    <H3>Numeros Sumados,multiplicacion,Restados,Divididos</H3> <input type="button" onclick="Numeros()" value="Numeros Solicitar" > <br> 
+    <br>
+
+    <script>
+        function Numeros(){
+            var num1 = prompt("Ingrese el primer numero:");
+            var num2 = prompt("Ingrese el segundo numero:");
+            var entero1 = parseInt(num1);
+            var entero2 = parseInt(num2);
+            var ciclo = 0;   
+            var sum = entero1 + entero2;
+            var res = entero1 - entero2;
+            var mul = entero1 * entero2;
+            var div = entero1 / entero2;
+            var mod = entero1 % entero2;
+
+            while(ciclo < 5){   
+                if(ciclo==0){
+                    alert("La suma es: "+sum);
+                }            
+                if(ciclo==1){
+                    alert("La resta es: "+res);
+                }
+                if(ciclo==2){
+                    alert("La multiplicacion es: "+mul);
+                }
+                if(ciclo==3){
+                    alert("La division es: "+div);
+                }
+                if(ciclo==4){
+                    alert("El MOD es: "+ mod);
+                } 
+                ciclo++;
+            }      
+        }
+    </script>
+</body>
+</html>
